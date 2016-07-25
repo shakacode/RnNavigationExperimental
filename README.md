@@ -19,11 +19,16 @@ with the following:
 
 `npm run flow`
 
+* *Critical* to use the right version of flow, which is specified in your package.json.
+
 ## Running the Linter
 
 `npm run lint`
 
-* *Critical* to use the right version of flow, which is specified in your package.json.
+### To autofix issues:
+
+`npm run eslint -- --fix`
+
 
 ## Starting React Native App
 
