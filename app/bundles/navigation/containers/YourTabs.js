@@ -3,7 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View, NavigationExperimental } from 'react-native';
 
-import type { PropsWithNavigate } from '../../../types/propTypes';
+import type { PropsWithNavigateType } from '../../../types/propTypes';
 import YourTab from './YourTab';
 import createAppNavigationContainer from '../hocs/createAppNavigationContainer';
 import styles from '../styles';
@@ -13,7 +13,7 @@ const {
 } = NavigationExperimental;
 
 const YourTabs = createAppNavigationContainer(class extends Component {
-  props: PropsWithNavigate;
+  props: PropsWithNavigateType;
   static propTypes = {
     navigationState: NavigationPropTypes.navigationState.isRequired,
     navigate: PropTypes.func.isRequired,

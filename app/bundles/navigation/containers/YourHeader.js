@@ -9,12 +9,12 @@ const {
 } = NavigationExperimental;
 
 
-import type { PropsWithNavigate } from '../../../types/propTypes';
+import type { PropsWithNavigateType } from '../../../types/propTypes';
 import createAppNavigationContainer from '../hocs/createAppNavigationContainer';
 
 
 const YourHeader = createAppNavigationContainer(class extends Component {
-  props: PropsWithNavigate;
+  props: PropsWithNavigateType;
   back: Function;
   renderTitleComponent: Function
 

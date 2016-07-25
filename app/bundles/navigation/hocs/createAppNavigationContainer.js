@@ -7,14 +7,14 @@
 // Note the use of context here
 
 import React, { PropTypes } from 'react';
-import type { PropsWithNavigate } from '../../../types/propTypes';
+import type { PropsWithNavigateType } from '../../../types/propTypes';
 
 function createAppNavigationContainer(ComponentClass: ReactClass<{}>
-  ): ReactClass<PropsWithNavigate> {
+  ): ReactClass<PropsWithNavigateType> {
   const key = '_navigationContainerNavigateCall';
 
   class Container extends React.Component {
-    props: PropsWithNavigate;
+    props: PropsWithNavigateType;
 
     static contextTypes = {
       [key]: PropTypes.func,

@@ -3,7 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, TouchableOpacity, NavigationExperimental } from 'react-native';
 
-import type { PropsWithNavigate } from '../../../types/propTypes';
+import type { PropsWithNavigateType } from '../../../types/propTypes';
 import createAppNavigationContainer from '../hocs/createAppNavigationContainer';
 import styles from '../styles';
 
@@ -12,7 +12,7 @@ const {
 } = NavigationExperimental;
 
 const YourTab = createAppNavigationContainer(class extends Component {
-  props: PropsWithNavigate;
+  props: PropsWithNavigateType;
   onPress: Function;
 
   static propTypes = {

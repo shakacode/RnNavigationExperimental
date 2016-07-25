@@ -2,7 +2,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import { NavigationExperimental, View } from 'react-native';
-import type { PropsWithNavigate } from '../../../types/propTypes';
+import type { PropsWithNavigateType } from '../../../types/propTypes';
 
 import createAppNavigationContainer from '../hocs/createAppNavigationContainer';
 import YourTabs from './YourTabs';
@@ -16,7 +16,7 @@ const {
 
 // Define your own controlled navigator.
 const Navigator = createAppNavigationContainer(class extends Component {
-  props: PropsWithNavigate;
+  props: PropsWithNavigateType;
   back: Function;
   renderHeader: Function;
   renderScene: Function;

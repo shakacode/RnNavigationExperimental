@@ -1,1 +1,1 @@
-export type PropsWithNavigate = { navigate: Function };
+export type PropsWithNavigateType = { navigate: Function };

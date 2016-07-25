@@ -3,7 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import { NavigationExperimental, ScrollView } from 'react-native';
 
-import type { PropsWithNavigate } from '../../../types/propTypes';
+import type { PropsWithNavigateType } from '../../../types/propTypes';
 import createAppNavigationContainer from '../hocs/createAppNavigationContainer';
 import NavigationExampleRow from './NavigationExampleRow/NavigationExampleRow';
 import styles from '../styles';
@@ -13,7 +13,7 @@ const {
 } = NavigationExperimental;
 
 const YourScene = createAppNavigationContainer(class extends Component {
-  props: PropsWithNavigate;
+  props: PropsWithNavigateType;
   popRoute: Function;
   pushRoute: Function;
 
